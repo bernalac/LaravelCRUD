@@ -23,6 +23,7 @@
                 <strong>Nacimiento:</strong>
                 {{ $autor->fecha_nac }}
             </div>
+            <h2>Frases del autor</h2>
         </div>
         
         @foreach($array as $element)

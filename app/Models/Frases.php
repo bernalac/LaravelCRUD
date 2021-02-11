@@ -9,7 +9,11 @@ class Frases extends Model
 {
     use HasFactory;
     public $table = "frases";
+    
     protected $fillable = [
-        'descripcion', 'categoria', 'id_autor'
+        'descripcion', 'categoria', 'autor_id'
     ];
+    public function autor() {
+        return $this->belongsTo(Autor::class);
+    }
 }

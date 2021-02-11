@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\AutorController;
+use App\Http\Controllers\FrasesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,4 @@ Route::get('/', function () {
 });
 
 Route::resource('autor', AutorController::class);
+Route::resource('frases', FrasesController::class);
